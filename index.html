@@ -2,38 +2,16 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>WA4_Abo3rab_v12.35 - النسخة الزرقاء لواتساب</title>
+  <title>WA5_Abo3rab_v12.35 - النسخة السوداء لواتساب</title>
   
   <!-- Favicon -->
   <link rel="icon" href="https://instagold.download/favicon.ico" type="image/x-icon">
 
-<!-- Meta tags الأساسية -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-<meta name="robots" content="index,follow"/>
-<meta name="description" content="WA4_Abo3rab_v12.35 هو نسخة محسنة من تطبيق واتساب الأزرق مع ميزات فريدة مثل إخفاء الظهور وتحميل الحالات والمزيد."/>
-<meta name="keywords" content="WhatsApp Plus, WhatsApp Blue, نسخة واتساب معدلة, تنزيل واتساب الأزرق"/>
-
-<!-- Open Graph (Facebook, WhatsApp, Telegram) -->
-<meta property="og:type" content="website"/>
-<meta property="og:site_name" content="GoldFire"/>
-<meta property="og:locale" content="ar_AR"/>
-<meta property="og:url" content="https://wa4.goldapk.app"/>
-<meta property="og:title" content="WA4_Abo3rab_v12.35 - النسخة البلس من واتساب الأزرق"/>
-<meta property="og:description" content="قم بتنزيل WA4_Abo3rab_v12.35 - نسخة معدلة من واتساب الأزرق مع ميزات فريدة."/>
-<meta property="og:image" content="app_icon2.png"/>
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content="@GoldFire"/>
-<meta name="twitter:title" content="WA4_Abo3rab_v12.35 - النسخة البلس من واتساب الأزرق"/>
-<meta name="twitter:description" content="قم بتنزيل WA4_Abo3rab_v12.35 - نسخة معدلة من واتساب الأزرق مع ميزات فريدة."/>
-<meta name="twitter:image" content="app_icon2.png"/>
-<meta name="twitter:url" content="https://wa4.goldapk.app"/>
-
-<!-- Google -->
-<meta itemprop="name" content="WA4_Abo3rab_v12.35"/>
-<meta itemprop="description" content="قم بتنزيل WA4_Abo3rab_v12.35 - نسخة معدلة من واتساب الأزرق مع ميزات فريدة."/>
-<meta itemprop="image" content="app_icon2.png"/>
+  <!-- Meta tags الأساسية -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="robots" content="index,follow"/>
+  <meta name="description" content="WA5_Abo3rab_v12.35 هو نسخة محسنة من تطبيق واتساب مع ميزات فريدة مثل إخفاء الظهور وتحميل الحالات والمزيد."/>
+  <meta name="keywords" content="WhatsApp Plus, WhatsApp Black, نسخة واتساب معدلة, تنزيل واتساب الأسود"/>
 
   <!-- الخطوط -->
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -54,13 +32,13 @@
   
   <style>
     :root {
-      --blue-primary: #0088cc;
-      --blue-secondary: #006699;
-      --blue-dark: #004466;
-      --text-dark: #222;
+      --black-primary: #000000;
+      --black-secondary: #222222;
+      --black-accent: #333333;
+      --black-light: #444444;
       --text-light: #f8f8f8;
-      --bg-light: #f9f9f9;
-      --shadow: 0 4px 12px rgba(0,0,0,0.08);
+      --text-gray: #cccccc;
+      --shadow: 0 4px 12px rgba(0,0,0,0.2);
       --transition: all 0.3s ease;
     }
     
@@ -74,8 +52,8 @@
       font-family: 'Tajawal', sans-serif;
       font-weight: 500;
       line-height: 1.7;
-      color: var(--text-dark);
-      background: linear-gradient(135deg, #f0f8ff 0%, #fff 100%);
+      color: var(--text-light);
+      background: linear-gradient(135deg, #111111 0%, #000000 100%);
       min-height: 100vh;
       position: relative;
     }
@@ -86,7 +64,7 @@
     #loader {
       position: fixed;
       inset: 0;
-      background: var(--bg-light);
+      background: #000;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -99,7 +77,7 @@
       text-align: center;
       padding: 30px;
       border-radius: 16px;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(30, 30, 30, 0.9);
       box-shadow: var(--shadow);
     }
     
@@ -108,19 +86,20 @@
       height: 70px;
       margin-bottom: 15px;
       animation: pulse 1.5s infinite;
+      filter: invert(1);
     }
     
     .loader-text {
       font-size: 18px;
       font-weight: 600;
-      color: var(--blue-dark);
+      color: var(--text-light);
       margin-bottom: 15px;
     }
     
     .loader-progress {
       width: 100%;
       height: 6px;
-      background: #e0e0e0;
+      background: #333;
       border-radius: 4px;
       overflow: hidden;
       position: relative;
@@ -132,7 +111,7 @@
       top: 0;
       height: 100%;
       width: 0%;
-      background: linear-gradient(90deg, var(--blue-secondary), var(--blue-primary));
+      background: linear-gradient(90deg, #555, #999);
       border-radius: 4px;
       transition: width 0.5s ease;
     }
@@ -143,11 +122,12 @@
       justify-content: space-between;
       align-items: center;
       padding: 12px 20px;
-      background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-primary) 100%);
+      background: linear-gradient(135deg, var(--black-accent) 0%, var(--black-primary) 100%);
       box-shadow: var(--shadow);
       position: sticky;
       top: 0;
       z-index: 100;
+      border-bottom: 1px solid #333;
     }
     
     .logo {
@@ -162,6 +142,7 @@
     
     .logo-icon {
       font-size: 20px;
+      color: var(--text-light);
     }
     
     .lang-switcher {
@@ -170,9 +151,9 @@
     }
     
     .lang-btn {
-      background: rgba(255, 255, 255, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      color: white;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #444;
+      color: var(--text-light);
       padding: 5px 12px;
       border-radius: 30px;
       font-weight: 600;
@@ -182,16 +163,17 @@
     }
     
     .lang-btn:hover {
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.2);
     }
     
     /* الهيدر */
     .header {
-      background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-primary) 100%);
+      background: linear-gradient(135deg, var(--black-accent) 0%, var(--black-primary) 100%);
       text-align: center;
       padding: 30px 15px;
       position: relative;
       overflow: hidden;
+      border-bottom: 1px solid #222;
     }
     
     .header::before {
@@ -201,7 +183,7 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+      background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 70%);
       transform: rotate(30deg);
     }
     
@@ -217,19 +199,19 @@
       font-weight: 800;
       margin-bottom: 8px;
       color: white;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
     
     .subtitle {
       font-size: 16px;
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.8);
       max-width: 600px;
       margin: 0 auto 15px;
     }
     
     .version-badge {
       display: inline-block;
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 0.1);
       color: white;
       padding: 5px 12px;
       border-radius: 20px;
@@ -261,7 +243,7 @@
     
     /* بطاقة التطبيق */
     .app-card {
-      background: white;
+      background: rgba(30, 30, 30, 0.8);
       border-radius: 18px;
       overflow: hidden;
       box-shadow: var(--shadow);
@@ -270,6 +252,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      border: 1px solid #333;
     }
     
     .app-logo-container {
@@ -281,8 +264,8 @@
       width: 130px;
       height: 130px;
       border-radius: 25px;
-      box-shadow: 0 8px 16px rgba(0, 102, 153, 0.3);
-      border: 4px solid white;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      border: 4px solid #333;
       position: relative;
       z-index: 2;
     }
@@ -293,7 +276,7 @@
       left: -12px;
       width: 154px;
       height: 154px;
-      background: linear-gradient(135deg, var(--blue-secondary), var(--blue-primary));
+      background: radial-gradient(circle, #444, #000);
       border-radius: 35px;
       z-index: 1;
       opacity: 0.7;
@@ -303,12 +286,12 @@
     .app-title {
       font-size: 22px;
       font-weight: 800;
-      color: var(--text-dark);
+      color: var(--text-light);
       margin-bottom: 8px;
     }
     
     .app-description {
-      color: #555;
+      color: var(--text-gray);
       margin-bottom: 25px;
       line-height: 1.7;
       font-size: 15px;
@@ -331,18 +314,19 @@
     
     .meta-icon {
       font-size: 18px;
-      color: var(--blue-primary);
+      color: #aaa;
       margin-bottom: 5px;
     }
     
     .meta-value {
       font-weight: 700;
       font-size: 15px;
+      color: var(--text-light);
     }
     
     .meta-label {
       font-size: 13px;
-      color: #777;
+      color: var(--text-gray);
     }
     
     /* زر التحميل */
@@ -355,20 +339,22 @@
     .file-box {
       display: flex;
       align-items: center;
-      background: linear-gradient(135deg, var(--blue-secondary), var(--blue-primary));
+      background: linear-gradient(135deg, #333, #000);
       color: white;
       padding: 16px;
       border-radius: 14px;
-      box-shadow: 0 5px 12px rgba(0, 102, 153, 0.4);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.6);
       text-decoration: none;
       transition: var(--transition);
       position: relative;
       overflow: hidden;
+      border: 1px solid #444;
     }
     
     .file-box:hover {
       transform: translateY(-4px);
-      box-shadow: 0 8px 16px rgba(0, 102, 153, 0.5);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+      background: linear-gradient(135deg, #444, #111);
     }
     
     .file-box::after {
@@ -378,7 +364,7 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
       transform: rotate(30deg);
       pointer-events: none;
     }
@@ -388,8 +374,9 @@
       height: 55px;
       margin-right: 12px;
       border-radius: 10px;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
       padding: 7px;
+      filter: invert(1);
     }
     
     .file-box .text {
@@ -403,21 +390,24 @@
       font-weight: 700;
       font-size: 18px;
       margin-bottom: 3px;
+      color: var(--text-light);
     }
     
     .file-box .size {
       font-size: 13px;
-      opacity: 0.9;
+      opacity: 0.8;
+      color: #aaa;
     }
     
     .file-box .download-icon {
       font-size: 22px;
       margin-right: 8px;
+      color: #aaa;
     }
     
     /* العد التنازلي */
     .countdown-box {
-      background: linear-gradient(135deg, #0088cc, var(--blue-secondary));
+      background: linear-gradient(135deg, #333, #000);
       padding: 16px;
       margin-top: 18px;
       border-radius: 14px;
@@ -425,8 +415,9 @@
       font-weight: 700;
       text-align: center;
       color: #fff;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
       display: none;
+      border: 1px solid #444;
     }
     
     /* زر التنزيل النهائي */
@@ -435,7 +426,7 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      background: linear-gradient(135deg, var(--blue-secondary), var(--blue-primary));
+      background: linear-gradient(135deg, #333, #000);
       color: white;
       padding: 16px 30px;
       font-size: 18px;
@@ -445,18 +436,20 @@
       border-radius: 50px;
       cursor: pointer;
       text-decoration: none;
-      box-shadow: 0 5px 12px rgba(0, 102, 153, 0.4);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.6);
       transition: var(--transition);
       width: 100%;
       max-width: 380px;
       margin: 25px auto 0;
       position: relative;
       overflow: hidden;
+      border: 1px solid #444;
     }
     
     .download-btn:hover {
       transform: translateY(-4px);
-      box-shadow: 0 8px 16px rgba(0, 102, 153, 0.6);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+      background: linear-gradient(135deg, #444, #111);
     }
     
     .download-btn::after {
@@ -466,24 +459,25 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
       transform: rotate(30deg);
       pointer-events: none;
     }
     
     /* ميزات التطبيق */
     .features-card {
-      background: white;
+      background: rgba(30, 30, 30, 0.8);
       border-radius: 18px;
       overflow: hidden;
       box-shadow: var(--shadow);
       padding: 25px;
+      border: 1px solid #333;
     }
     
     .section-title {
       font-size: 22px;
       font-weight: 800;
-      color: var(--text-dark);
+      color: var(--text-light);
       text-align: center;
       margin-bottom: 25px;
       position: relative;
@@ -498,7 +492,7 @@
       transform: translateX(-50%);
       width: 70px;
       height: 3px;
-      background: linear-gradient(90deg, var(--blue-secondary), var(--blue-primary));
+      background: linear-gradient(90deg, #555, #999);
       border-radius: 2px;
     }
     
@@ -513,14 +507,15 @@
       gap: 12px;
       padding: 18px;
       border-radius: 14px;
-      background: #f0f8ff;
+      background: rgba(40, 40, 40, 0.8);
       transition: var(--transition);
+      border: 1px solid #333;
     }
     
     .feature-item:hover {
       transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      background: #e0f0ff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      background: rgba(50, 50, 50, 0.8);
     }
     
     .feature-icon {
@@ -528,7 +523,7 @@
       height: 45px;
       min-width: 45px;
       border-radius: 10px;
-      background: linear-gradient(135deg, var(--blue-secondary), var(--blue-primary));
+      background: linear-gradient(135deg, #555, #333);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -544,21 +539,22 @@
       font-weight: 700;
       font-size: 16px;
       margin-bottom: 6px;
-      color: var(--text-dark);
+      color: var(--text-light);
     }
     
     .feature-desc {
       font-size: 14px;
-      color: #666;
+      color: var(--text-gray);
       line-height: 1.6;
     }
     
     /* الفوتر */
     .footer {
-      background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
-      color: #aaa;
+      background: linear-gradient(135deg, #0a0a0a 0%, #000 100%);
+      color: #888;
       padding: 40px 15px 25px;
       margin-top: 40px;
+      border-top: 1px solid #222;
     }
     
     .footer-content {
@@ -589,6 +585,7 @@
       font-size: 15px;
       line-height: 1.7;
       margin-bottom: 20px;
+      color: var(--text-gray);
     }
     
     .footer-links {
@@ -600,7 +597,7 @@
     
     .footer-links a {
       text-decoration: none;
-      color: #aaa;
+      color: #888;
       display: flex;
       align-items: center;
       gap: 7px;
@@ -609,7 +606,7 @@
     }
     
     .footer-links a:hover {
-      color: var(--blue-primary);
+      color: #aaa;
     }
     
     .footer-section-title {
@@ -628,7 +625,7 @@
       right: 0;
       width: 45px;
       height: 3px;
-      background: var(--blue-primary);
+      background: #555;
     }
     
     .copyright {
@@ -637,12 +634,12 @@
       margin-top: 25px;
       border-top: 1px solid rgba(255,255,255,0.1);
       font-size: 13px;
-      color: #777;
+      color: #666;
     }
     
     .disclaimer {
       font-size: 12px;
-      color: #777;
+      color: #666;
       margin-top: 12px;
       line-height: 1.7;
       max-width: 800px;
@@ -720,7 +717,7 @@
   <!-- شاشة التحميل -->
   <div id="loader">
     <div class="loader-content">
-      <img src="https://instagold.download/favicon.ico" alt="واتساب الأزرق" class="loader-logo">
+      <img src="https://instagold.download/favicon.ico" alt="واتساب الأسود" class="loader-logo">
       <div class="loader-text" data-lang="ar">جاري تحميل الصفحة...</div>
       <div class="loader-text" data-lang="en">Loading page...</div>
       <div class="loader-progress">
@@ -733,8 +730,8 @@
   <div class="top-bar">
     <a href="#" class="logo">
       <i class="fab fa-whatsapp logo-icon"></i>
-      <span data-lang="ar">واتساب الازرق</span>
-      <span data-lang="en">WhatsApp Blue</span>
+      <span data-lang="ar">واتساب الاسود</span>
+      <span data-lang="en">WhatsApp Black</span>
     </a>
     
     <div class="lang-switcher">
@@ -746,8 +743,8 @@
   <!-- الهيدر -->
   <header class="header">
     <div class="header-content">
-      <h1 data-lang="ar">تحميل واتساب الأزرق</h1>
-      <h1 data-lang="en">Download WhatsApp Blue</h1>
+      <h1 data-lang="ar">تحميل واتساب الأسود</h1>
+      <h1 data-lang="en">Download WhatsApp Black</h1>
       
       <p class="subtitle" data-lang="ar">نسخة محسنة من تطبيق واتساب مع ميزات فريدة</p>
       <p class="subtitle" data-lang="en">Enhanced WhatsApp app with unique features</p>
@@ -763,11 +760,11 @@
       <div class="app-card">
         <div class="app-logo-container">
           <div class="app-logo-bg"></div>
-          <img src="wablue.png" alt="واتساب الأزرق" class="app-logo">
+          <img src="wablack.png" alt="واتساب الأسود" class="app-logo">
         </div>
         
-        <h2 class="app-title" data-lang="ar">واتساب الأزرق</h2>
-        <h2 class="app-title" data-lang="en">WhatsApp Blue</h2>
+        <h2 class="app-title" data-lang="ar">واتساب الأسود</h2>
+        <h2 class="app-title" data-lang="en">WhatsApp Black</h2>
         
         <p class="app-description" data-lang="ar">
           نسخة محسنة من تطبيق واتساب الرسمي تمنحك تحكمًا كاملاً في حسابك. استمتع بميزات فريدة مثل تنزيل الحالات، إخفاء الحالة، منع الحظر، تخطي الإعلانات، والمزيد!
@@ -802,7 +799,7 @@
           <a href="javascript:void(0);" onclick="startCountdown()" id="fileInfoBox" class="file-box">
             <img src="app_icon.png" alt="icon">
             <div class="text">
-              <div class="title">WA4_Abo3rab_v12.35</div>
+              <div class="title">WA5_Abo3rab_v12.35</div>
               <div class="size" data-lang="ar">اضغط للتحميل</div>
               <div class="size" data-lang="en">Click to download</div>
             </div>
@@ -811,7 +808,7 @@
 
           <div id="countdownBox" class="countdown-box"></div>
 
-          <a href="https://dlll.apkm.app/wagold/12.35/WA4_Abo3rab_v12.35.apk" 
+          <a href="https://dlll.apkm.app/wagold/12.35/WA5_Abo3rab_v12.35.apk" 
              id="finalDownloadBox" class="download-btn" style="display: none;">
             <i class="fas fa-download"></i>
             <span data-lang="ar">تنزيل الآن</span>
@@ -896,8 +893,8 @@
       <div>
         <div class="footer-logo">
           <i class="fab fa-whatsapp"></i>
-          <span data-lang="ar">واتساب الازرق</span>
-          <span data-lang="en">WhatsApp Blue</span>
+          <span data-lang="ar">واتساب الاسود</span>
+          <span data-lang="en">WhatsApp Black</span>
         </div>
         
         <p class="footer-desc" data-lang="ar">
@@ -931,7 +928,7 @@
     </div>
     
     <div class="copyright">
-      <p>&copy; 2025 WhatsApp Blue. <span data-lang="ar">جميع الحقوق محفوظة</span><span data-lang="en">All rights reserved</span></p>
+      <p>&copy; 2025 WhatsApp Black. <span data-lang="ar">جميع الحقوق محفوظة</span><span data-lang="en">All rights reserved</span></p>
       <p class="disclaimer" data-lang="ar">
         نحن لا نستضيف أي ملف على خوادمنا. جميع الروابط يتم توجيهها من مصادر خارجية موثوقة.
         هذا التطبيق ليس تابعًا لشركة واتساب أو فيسبوك.
