@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <title>يوتيوب الذهبي - YouTube Gold</title>
   
-  <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
    <!-- Meta tags الأساسية -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -40,7 +39,6 @@
   
   <!-- أيقونات -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
   
   
   <!-- Google tag (gtag.js) -->
@@ -926,7 +924,9 @@
         
         <div class="download-box">
           <a href="javascript:void(0);" onclick="startCountdown()" id="fileInfoBox" class="file-box">
-            <img src="app_icon.png" alt="icon">
+            <div class="app-icon">
+              <i class="fab fa-youtube"></i>
+            </div>
             <div class="text">
               <div class="title">YouTube_Gold_v16</div>
               <div class="size" data-lang="ar">اضغط للتحميل</div>
@@ -937,6 +937,8 @@
 
           <div id="countdownBox" class="countdown-box"></div>
 
+          <!-- مكان إضافة رابط التحميل الحقيقي -->
+          <!-- قم بتغيير الرابط أدناه إلى رابط التحميل الخاص بك -->
           <a href="https://dlll.apkm.app/ytgold/16/YouTube_Gold_V16.apk" 
              id="finalDownloadBox" class="download-btn" style="display: none;">
             <i class="fas fa-download"></i>
@@ -1123,22 +1125,6 @@
           clearInterval(interval);
           countdownBox.style.display = "none";
           finalBtn.style.display = "flex";
-          
-          // عند النقر على زر التحميل
-          finalBtn.addEventListener("click", function(e) {
-            e.preventDefault();
-            // محاكاة عملية التحميل
-            finalBtn.innerHTML = lang === "ar" 
-              ? '<i class="fas fa-spinner fa-spin"></i> جاري التنزيل...' 
-              : '<i class="fas fa-spinner fa-spin"></i> Downloading...';
-              
-            setTimeout(function() {
-              finalBtn.innerHTML = lang === "ar" 
-                ? '<i class="fas fa-check"></i> اكتمل التنزيل!' 
-                : '<i class="fas fa-check"></i> Download Complete!';
-              finalBtn.style.background = "linear-gradient(135deg, #4CAF50, #2E7D32)";
-            }, 2000);
-          });
         }
       }, 1000);
     }
