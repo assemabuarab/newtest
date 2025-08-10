@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأسئلة الشائعة - ماسنجر الذهبي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: linear-gradient(135deg, #0a0a0a 0%, #000 100%);
+      color: #f8f8f8;
+      line-height: 1.7;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(30, 30, 30, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(0, 106, 255, 0.3);
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid rgba(0, 106, 255, 0.5);
+    }
+    
+    h1 {
+      color: #0084FF;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      color: #0084FF;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    
+    .back-btn i {
+      margin-right: 8px;
+    }
+    
+    .faq-item {
+      margin-bottom: 25px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(40, 40, 40, 0.6);
+    }
+    
+    .faq-question {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background: rgba(0, 106, 255, 0.1);
+      font-weight: 600;
+      font-size: 19px;
+      cursor: pointer;
+    }
+    
+    .faq-question i {
+      margin-left: 10px;
+      transition: transform 0.3s ease;
+    }
+    
+    .faq-answer {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+    
+    .faq-answer p {
+      padding: 20px 0;
+    }
+    
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+    
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      padding: 0 20px;
+    }
+    
+    .update-date {
+      text-align: left;
+      font-style: italic;
+      color: #aaa;
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+        margin: 20px auto;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      .faq-question {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-question-circle"></i> الأسئلة الشائعة</h1>
+      <p>إجابات على أكثر الأسئلة شيوعًا حول تطبيق ماسنجر الذهبي</p>
+    </header>
+    
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية</a>
+    
+    <div class="faq-section">
+      <div class="faq-item">
+        <div class="faq-question">
+          <i class="fas fa-chevron-down"></i>
+          <span>هل تطبيق ماسنجر الذهبي آمن للاستخدام؟</span>
+        </div>
+        <div class="faq-answer">
+          <p>نعم، تطبيق ماسنجر الذهبي آمن تمامًا للاستخدام. التطبيق لا يحتوي على أي برمجيات خبيثة أو فيروسات، وقد تم فحصه من قبل عدة منصات أمنية. نحن لا نجمع أي بيانات شخصية من المستخدمين.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <i class="fas fa-chevron-down"></i>
+          <span>هل يمكنني استخدام التطبيق مع حساب ماسنجر الرسمي؟</span>
+        </div>
+        <div class="faq-answer">
+          <p>بالتأكيد، يمكنك استخدام نفس حساب فيسبوك/ماسنجر لتسجيل الدخول إلى تطبيق ماسنجر الذهبي. لن يؤثر ذلك على حسابك الرسمي بأي شكل.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <i class="fas fa-chevron-down"></i>
+          <span>هل التطبيق مجاني بالكامل؟</span>
+        </div>
+        <div class="faq-answer">
+          <p>نعم، تطبيق ماسنجر الذهبي مجاني بالكامل مع كل الميزات المتقدمة متاحة دون أي تكلفة. نحن نخطط لإضافة ميزات إضافية مميزة في المستقبل قد تكون مدفوعة، لكن الإصدار الحالي مجاني بالكامل.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <i class="fas fa-chevron-down"></i>
+          <span>ما هي الأجهزة المدعومة؟</span>
+        </div>
+        <div class="faq-answer">
+          <p>يدعم التطبيق جميع الأجهزة التي تعمل بنظام أندرويد 6.0 أو أعلى. نحن نعمل على إصدار لنظام iOS سيتم إصداره قريبًا.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <i class="fas fa-chevron-down"></i>
+          <span>كيف يمكنني تحديث التطبيق؟</span>
+        </div>
+        <div class="faq-answer">
+          <p>عند توفر تحديث جديد، سنقوم بنشر الإعلان على قناة التليجرام الرسمية. يمكنك تحميل الإصدار الجديد من موقعنا الإلكتروني، وسيحل محل الإصدار القديم تلقائيًا دون فقدان أي بيانات.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <i class="fas fa-chevron-down"></i>
+          <span>لماذا لا تظهر حالة الاتصال الخاصة بي للمستخدمين الآخرين؟</span>
+        </div>
+        <div class="faq-answer">
+          <p>هذه إحدى الميزات الرئيسية في تطبيق ماسنجر الذهبي. عند تفعيل "وضع التخفي" من إعدادات الخصوصية، لن تتمكن جهات الاتصال من رؤية أنك متصل أو متواجد على التطبيق.</p>
+        </div>
+      </div>
+    </div>
+    
+    <p class="update-date">آخر تحديث: 11 أغسطس 2025</p>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

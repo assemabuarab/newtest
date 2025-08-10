@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا - ماسنجر الذهبي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: linear-gradient(135deg, #0a0a0a 0%, #000 100%);
+      color: #f8f8f8;
+      line-height: 1.7;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(30, 30, 30, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(0, 106, 255, 0.3);
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid rgba(0, 106, 255, 0.5);
+    }
+    
+    h1 {
+      color: #0084FF;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      color: #0084FF;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    
+    .back-btn i {
+      margin-right: 8px;
+    }
+    
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    
+    .contact-card {
+      background: rgba(40, 40, 40, 0.6);
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      border-top: 4px solid #0084FF;
+      transition: transform 0.3s ease;
+    }
+    
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .contact-icon {
+      font-size: 40px;
+      color: #0084FF;
+      margin-bottom: 15px;
+    }
+    
+    .contact-title {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #0084FF;
+    }
+    
+    .contact-info {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+    
+    .contact-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0084FF;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      background: rgba(0, 106, 255, 0.2);
+      color: #0084FF;
+      border-radius: 50%;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      background: #0084FF;
+      color: white;
+      transform: translateY(-3px);
+    }
+    
+    .update-date {
+      text-align: left;
+      font-style: italic;
+      color: #aaa;
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+        margin: 20px auto;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-headset"></i> اتصل بنا</h1>
+      <p>نحن هنا لمساعدتك في أي استفسار أو مشكلة تواجهها</p>
+    </header>
+    
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية</a>
+    
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3 class="contact-title">البريد الإلكتروني</h3>
+        <p class="contact-info">للإستفسارات العامة والدعم الفني</p>
+        <a href="mailto:goldhelper.report@gmail.com" class="contact-link">goldhelper.report@gmail.com</a>
+      </div>
+      
+      <div class="contact-card">
+        <div class="contact-icon">
+          <i class="fab fa-telegram"></i>
+        </div>
+        <h3 class="contact-title">قناة التليجرام</h3>
+        <p class="contact-info">للحصول على آخر التحديثات والأخبار</p>
+        <a href="https://t.me/AssemBlogger" class="contact-link" target="_blank">@AssemBlogger</a>
+      </div>
+      
+      <div class="contact-card">
+        <div class="contact-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <h3 class="contact-title">الدعم عبر الواتساب</h3>
+        <p class="contact-info">للحصول على دعم فوري ومباشر</p>
+        <a href="https://wa.me/+18722956543" class="contact-link" target="_blank">+18722956543</a>
+      </div>
+      
+      <div class="contact-card">
+        <div class="contact-icon">
+          <i class="fas fa-bug"></i>
+        </div>
+        <h3 class="contact-title">الإبلاغ عن مشكلة</h3>
+        <p class="contact-info">ساعدنا في تحسين التطبيق بالإبلاغ عن الأخطاء</p>
+        <a href="mailto:goldhelper.report@gmail.com" class="contact-link">goldhelper.report@gmail.com</a>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px;">
+      <h3 style="color: #0084FF; margin-bottom: 15px;">تابعنا على وسائل التواصل الاجتماعي</h3>
+      <div class="social-links">
+        <a href="https://x.com/abu3rab_gold" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/assem.mahgoob" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/3ssembloger" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    
+    <p class="update-date">آخر تحديث: 11 أغسطس 2025</p>
+  </div>
+</body>
+</html>

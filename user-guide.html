@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل الاستخدام - ماسنجر الذهبي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: linear-gradient(135deg, #0a0a0a 0%, #000 100%);
+      color: #f8f8f8;
+      line-height: 1.7;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(30, 30, 30, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(0, 106, 255, 0.3);
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid rgba(0, 106, 255, 0.5);
+    }
+    
+    h1 {
+      color: #0084FF;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      color: #0084FF;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    
+    .back-btn i {
+      margin-right: 8px;
+    }
+    
+    .feature-box {
+      background: rgba(40, 40, 40, 0.6);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-left: 4px solid #0084FF;
+    }
+    
+    .feature-title {
+      display: flex;
+      align-items: center;
+      color: #0084FF;
+      margin-bottom: 15px;
+    }
+    
+    .feature-title i {
+      margin-left: 10px;
+      font-size: 22px;
+    }
+    
+    ul {
+      padding-right: 20px;
+      margin-bottom: 20px;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    .steps {
+      counter-reset: step-counter;
+      padding-right: 0;
+    }
+    
+    .steps li {
+      position: relative;
+      padding-right: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .steps li:before {
+      counter-increment: step-counter;
+      content: counter(step-counter);
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      background: #0084FF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    
+    .update-date {
+      text-align: left;
+      font-style: italic;
+      color: #aaa;
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+        margin: 20px auto;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      h2 {
+        font-size: 22px;
+      }
+      
+      .steps li {
+        padding-right: 35px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-book-open"></i> دليل استخدام ماسنجر الذهبي</h1>
+      <p>استفد من جميع الميزات المتقدمة للتطبيق</p>
+    </header>
+    
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية</a>
+    
+    <section>
+      <div class="feature-box">
+        <div class="feature-title">
+          <i class="fas fa-user-secret"></i>
+          <h2>وضع التخفي</h2>
+        </div>
+        <p>تمكنك هذه الميزة من استخدام التطبيق دون أن يظهر أنك متصل:</p>
+        <ol class="steps">
+          <li>افتح قائمة الإعدادات من الزاوية العلوية اليسرى</li>
+          <li>اختر "إعدادات الخصوصية"</li>
+          <li>قم بتفعيل خيار "إخفاء حالة الاتصال"</li>
+          <li>اضبط الإعدادات حسب رغبتك (مثل إخفاء الحالة في أوقات محددة)</li>
+        </ol>
+      </div>
+      
+      <div class="feature-box">
+        <div class="feature-title">
+          <i class="fas fa-palette"></i>
+          <h2>الثيمات الذهبية</h2>
+        </div>
+        <p>استمتع بتجربة بصرية فريدة مع الثيمات الذهبية الحصرية:</p>
+        <ol class="steps">
+          <li>اذهب إلى "الإعدادات" ثم "المظهر"</li>
+          <li>اختر "الثيمات الذهبية"</li>
+          <li>اختر من بين مجموعة الثيمات المتاحة</li>
+          <li>اضبط شدة اللون الذهبي حسب تفضيلاتك</li>
+        </ol>
+      </div>
+      
+      <div class="feature-box">
+        <div class="feature-title">
+          <i class="fas fa-file-download"></i>
+          <h2>تحميل الملفات الكبيرة</h2>
+        </div>
+        <p>يمكنك الآن تحميل ملفات تصل إلى 2GB بسهولة:</p>
+        <ol class="steps">
+          <li>اختر المحادثة التي تريد إرسال ملف إليها</li>
+          <li>اضغط على أيقونة "+" بجوار مربع الرسائل</li>
+          <li>اختر "إرسال ملف"</li>
+          <li>حدد الملف الذي تريد إرساله (حتى 2GB)</li>
+        </ol>
+      </div>
+      
+      <div class="feature-box">
+        <div class="feature-title">
+          <i class="fas fa-video"></i>
+          <h2>مكالمات فيديو عالية الجودة</h2>
+        </div>
+        <p>استمتع بمكالمات فيديو HD بدون تقطيع:</p>
+        <ol class="steps">
+          <li>افتح المحادثة مع الشخص الذي تريد الاتصال به</li>
+          <li>اضغط على أيقونة الفيديو في أعلى الشاشة</li>
+          <li>قبل بدء المكالمة، اضغط على "جودة الفيديو"</li>
+          <li>اختر "جودة عالية (HD)"</li>
+        </ol>
+      </div>
+      
+      <div class="feature-box">
+        <div class="feature-title">
+          <i class="fas fa-language"></i>
+          <h2>الترجمة الفورية</h2>
+        </div>
+        <p>ترجمة الرسائل تلقائيًا لأكثر من 100 لغة:</p>
+        <ol class="steps">
+          <li>اضغط مطولاً على الرسالة التي تريد ترجمتها</li>
+          <li>اختر "ترجمة" من القائمة المنبثقة</li>
+          <li>لتفعيل الترجمة التلقائية، اذهب إلى "الإعدادات" ثم "المحادثات"</li>
+          <li>قم بتفعيل خيار "الترجمة التلقائية"</li>
+        </ol>
+      </div>
+    </section>
+    
+    <p class="update-date">آخر تحديث: 11 أغسطس 2025</p>
+  </div>
+</body>
+</html>
